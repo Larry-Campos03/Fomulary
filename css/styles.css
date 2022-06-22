@@ -1,0 +1,130 @@
+:root{
+    --mainFont: 'Quicksand', sans-serif;
+    --widthInputsTexts: 15em;
+    --heigthInputsTexts: 2em;
+    --spaceBetweenInputsElements: 0.15em;
+
+    --widthButton: 11em;
+    --heightButton: 2.3em;
+    --borderRadiusButton: 1em;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--mainFont);
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-formulary{
+    font-size: 30px;
+    width: 80%;
+    height: auto;
+    margin: 5em auto;
+    padding: 0.65em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    border: 1px black solid;
+}
+
+.main-formulary__title{
+    text-align: center;
+}
+
+.main-formulary__form{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 25px;
+    border: 1px black solid;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+.form__inputs{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px black solid;
+    margin: 0.5em;
+}
+
+/* ---------Input name----------------- */
+
+.form__input--name{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spaceBetweenInputsElements);
+}
+
+.form__input--name label{
+    text-align: center;
+}
+
+.form__input--name .input__styles{
+    width: var(--widthInputsTexts);
+    height: var(--heigthInputsTexts);
+    border-radius: 0.7em;
+    text-align: center;
+}
+
+/* ------------Input Email------------ */
+
+.form__input--email{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spaceBetweenInputsElements);
+}
+
+.form__input--email label{
+    text-align: center;
+}
+
+.form__input--email .input__styles{
+    width: var(--widthInputsTexts);
+    height: var(--heigthInputsTexts);
+    border-radius: 0.7em;
+    text-align: center;
+}
+
+/* ------------ Buttom sudmin---------- */
+
+.form__button{
+    align-self: center;
+}
+
+.form__button button{
+    width: var(--widthButton);
+    height: var(--heightButton);
+    border-radius: var(--borderRadiusButton);
+    transition: 0.3s;
+}
+
+.form__button button:hover{
+    background-color: #4A9CDC;
+}
+
+
+/* --------- Error -------------- */
+
+.errorDate{
+    background-color:red;
+}
+
+/* ----------Correct---------- */
+
+.correctDate{
+    background-color: green;
+}
