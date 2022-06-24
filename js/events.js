@@ -40,7 +40,7 @@ export const validateDate = (e) =>{
 
 export const validateSubmit = (e) =>{
     if(changeState.inputName && changeState.inputEmail){
-        console.log("enviado");
+        document.getElementById("formularyReset").reset();
 
     }else{
         console.log("No enviado");
